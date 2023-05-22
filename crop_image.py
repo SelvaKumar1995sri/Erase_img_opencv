@@ -22,7 +22,7 @@ def process_image():
     # Copy and paste regions from the back image
     for rect in rectangles:
         x, y = rect
-        radius = 5  # Set the desired radius of the circular region
+        radius = 20  # Set the desired radius of the circular region
         
         # Copy the corresponding region from the back image
         copied_region = img_back_resized[y - radius:y + radius, x - radius:x + radius]
